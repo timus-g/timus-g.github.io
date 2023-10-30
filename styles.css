@@ -8,42 +8,13 @@ body, h1, h2, h3, p, ul {
 body {
     background-color: #f8f8f8;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
 /* Container for content */
 .container {
     width: 80%;
     margin: 0 auto;
-}
-
-/* Navigation styles */
-nav {
-    background-color: #333;
-    color: white;
-    padding: 15px 0;
-}
-
-nav h1 {
-    font-size: 1.5em;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s ease-in-out;
-}
-
-nav a:hover {
-    color: #f39c12;
 }
 
 /* Hero section styles */
@@ -67,36 +38,25 @@ nav a:hover {
 /* Section styles */
 .section {
     padding: 80px 0;
+    opacity: 0; /* Initially set opacity to 0 */
+    transition: opacity 1s ease, background 1s ease; /* Add a smooth transition for opacity and background */
+    background: linear-gradient(to bottom, #ffffff, #f8f8f8); /* Gradient background */
+    text-align: center; /* Center the section heading */
 }
 
-/* Project item styles */
-.project-item {
-    background-color: white;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 20px;
+.section h2 {
+    margin-bottom: 30px;
 }
 
-.project-item h3 {
-    color: #333;
+.section p {
+    text-align: justify; /* Justify the content within the section */
+    margin: 0 auto; /* Center the content within the section */
+    max-width: 800px; /* Set a maximum width for better readability */
 }
 
-.project-item p {
-    color: #777;
-}
-
-.project-item a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.project-item a:hover {
-    background-color: #2980b9;
+/* Show sections with a fade-in effect on scroll */
+.section.active {
+    opacity: 1;
 }
 
 /* Footer styles */
