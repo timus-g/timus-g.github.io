@@ -17,6 +17,49 @@ body {
     margin: 0 auto;
 }
 
+/* Left Sidebar styles */
+#sidebar {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.profile-image img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li {
+    margin-bottom: 10px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+.navigation a:hover {
+    color: #f39c12;
+}
+
+/* Main Content styles */
+#content {
+    margin-left: 250px;
+}
+
 /* Hero section styles */
 #hero {
     background-image: url('hero-bg.jpg'); /* Add your background image URL */
