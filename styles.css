@@ -16,6 +16,20 @@ body {
     margin: 0 auto;
 }
 
+/* Fixed Navigation styles */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* Set a high z-index to ensure the navigation is above other elements */
+}
+
+/* Add some padding to the main content to prevent it from being hidden under the fixed navigation */
+#content {
+    margin-top: 60px; /* Adjust as needed based on the height of your navigation bar */
+}
 /* Navigation styles */
 nav {
     background-color: #333;
@@ -48,7 +62,7 @@ nav a:hover {
 
 /* Hero section styles */
 #hero {
-    background-image: url('hero-bg.jpg'); /* Add your background image URL */
+    background-image: url('hero.jpg'); /* Add your background image URL */
     background-size: cover;
     color: white;
     text-align: center;
